@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../Images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.wrapper{
+    width: 80%;
+    padding-inline:2rem;
+    padding-block: 2rem;
+    background: rgba(00, 04, 28, 0.7);
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(00,04,28,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.wrapper h1{
+    color: #00d2ff;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.wrapper .sub_row{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .sub_row .row{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    margin-top:1rem;
+    flex-direction: column;
+
+}
+.wrapper .sub_row .row label{
+    font-size: .9rem;
+    font-weight: 600;
+    color: #649173;
+}
+.wrapper .sub_row .row input{
+    padding:.5rem 0 .5rem .3rem;
+    width: 15rem;
+    border:none;
+    background: transparent;
+    border: 1px solid #00d2ff;
+    color: #649173;
+    caret-color: #649173;
+    font-size: 1rem;
+    font-weight: 600;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+.wrapper .sub_row .row input:focus{
+    outline: none;
+}
+.wrapper button{
+    margin-top: 1rem;
+    padding: .6rem 1.2rem;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #00d2ff;
+    color: #649173;
+    transition:.6s linear;
+}
+.wrapper button:hover{
+    background-color: #00d2ff; 
+     color: #000428; 
+}
+.wrapper .result{
+    width: 80%;
+    margin-top: 2rem;
+}
+.wrapper .result ul{
+    list-style: none;
+    list-style-type: '★ ';
+}
+.wrapper .result ul li{
+    font-weight: 400;
+    color: #00d2ff;
+}
+.wrapper .result span{
+    color:#649173;
+    font-weight: 600;
+}    
+.wrapper .sub_row .row p{
+    color: red;
+    font-size: .8rem;
+    font-weight: 500;
+}
+h1::selection, li::selection{
+    background-color: #649173;
+}
+label::selection,input::selection{
+    background-color: #00d2ff;
+}
+.img_box{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.img_box .img01{
+    width: 15%;
+    animation: astronaut 5s infinite ease-in-out;
+}
+@keyframes astronaut{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20vh) rotate(12deg);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.img_box .img01::selection{
+    background: transparent;
+}
+.img_box .img02{
+    width: 11%;
+    position: absolute;
+    bottom:2vh;
+    right: 2%;
+    animation: rocket 5s infinite linear;
+}
+@keyframes rocket{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-64vh) rotate(3deg);
+    }
+}

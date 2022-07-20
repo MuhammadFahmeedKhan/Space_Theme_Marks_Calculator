@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Marks Calculator</h1>
+        <div class="sub_row">
+            <div class="row">
+            <label>Enter Your English Marks</label>
+            <input type="number" id="eng">
+            <p id="e_alt"></p>
+        </div>
+        <div class="row">
+            <label>Enter Your Urdu Marks</label>
+            <input type="number" id="urdu">
+            <p id="u_alt"></p>
+        </div>
+        <div class="row">
+            <label>Enter Your Maths Marks</label>
+            <input type="number" id="maths">
+            <p id="m_alt"></p>
+        </div>
+    </div>
+    <div class="sub_row">
+        <div class="row">
+            <label>Enter Your Science Marks</label>
+            <input type="number" id="sci">
+            <p id="s_alt"></p>
+        </div>
+        <div class="row">
+            <label>Enter Your Computer Marks</label>
+            <input type="number" id="comp">
+            <p id="c_alt"></p>
+        </div>
+        <div class="row">
+            <label>Enter Your Islamiyat Marks</label>
+            <input type="number" id="isl">
+            <p id="i_alt"></p>
+        </div>
+    </div>
+    <button onclick="sub()"><i class="fa-solid fa-rocket"></i> Calculate</button>
+    
+    <div class="result">
+        <ul>
+            <li>Your English Marks Are: <span id="eng_show"></span></li>
+            <li>Your Urdu Marks Are: <span id="urdu_show"></span></li>
+            <li>Your Maths Marks Are: <span id="maths_show"></span></li>
+            <li>Your Science Marks Are: <span id="sci_show"></span></li>
+                <li>Your Computer Marks Are: <span id="comp_show"></span></li>
+                <li>Your Islamiyat Marks Are: <span id="isl_show"></span></li>
+                <li>Your Obtained Marks Are: <span id="obt_show"></span></li>
+                <li>Your Percentage Are: <span id="per_show"></span></li>
+                <li>Your Grade Is: <span id="grade_show"></span></li>
+                <li>Your Status Is: <span id="status_show"></span></li>
+            </ul>
+        </div>
+        <button onclick="res()"><i class="fa-solid fa-user-astronaut"></i> Reset</button>
+    </div>
+    <div class="img_box">
+        <img src="Images/—Pngtree—astronaut vector material_2194521.png" class="img01">
+        <img src="Images/ufo-146541_960_720.png" class="img02">
+    </div>
+    
+    <script src="javascript/script.js"></script>
+</body>
+</html>
